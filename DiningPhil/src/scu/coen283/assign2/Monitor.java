@@ -1,7 +1,7 @@
 package scu.coen283.assign2;
 
 /*
- * Monitor Class where the pickfork, put fork and test is synchronized
+ * Monitor Class where the pick fork, put fork and test is synchronized
  * */
 public class Monitor {
 	private static int numOfPhilosphers;
