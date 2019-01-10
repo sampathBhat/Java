@@ -1,5 +1,3 @@
-package sam.stringManipulation;
-
 public class TrieNode {
 
 	static final int ALPHABET_SIZE = 27;

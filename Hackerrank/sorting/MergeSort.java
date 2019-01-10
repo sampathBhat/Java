@@ -1,5 +1,3 @@
-package sam.sorting;
-
 import java.util.Arrays;
 
 public class MergeSort {
