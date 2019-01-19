@@ -50,9 +50,6 @@ public class V5 {
         public static final int tos = 14;
     }
 
-    /* public enum HeaderFields {
-    H_VERSION=0,H_COUNT, H_SYSUPTIME, H_UNIXSECS, H_UNIXNSECS, H_FLOWSEQUENCE,H_ENGINETYPE,H_ENGINEID,H_SAMPLINGINTERVAL
-            }*/
     public interface int_HeaderFields {
 
         public static final int count = 1;
@@ -393,18 +390,12 @@ public class V5 {
         
 int hadoopwrite=0;
  if (cmdLine.hasOption("directHadoop")) {
-//            dataDirectoryPath = (String) cmdLine.getParsedOptionValue("directHadoop");
             hadoopwrite=1;
         } 
-        // Long nGroupBy;
         if (cmdLine.hasOption("groupby")) {
-            // System.err.println(cmdLine.getParsedOptionValue("groupby"));
             V5.numberofGroupBy = (Long) cmdLine.getParsedOptionValue("groupby");
-            // System.err.println(V5.numberofGroupBy);
-            // nGroupBy
         } else {
             System.err.println("number of groupby is not passed hence taking default value of 1");
-          //  System.exit(1);
         }
         // AGGREGATION_PERIOD in secs
 
